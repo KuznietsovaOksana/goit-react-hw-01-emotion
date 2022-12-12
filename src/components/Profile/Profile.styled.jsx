@@ -1,5 +1,12 @@
 import styled from '@emotion/styled';
 
+export const Avatar = styled.img`
+  max-width: 300px;
+  max-height: 300px;
+  transition: transform 300ms ease 0s;
+  border-radius: 50%;
+`;
+
 export const Box = styled.div`
   border: 3px solid #130c98;
   border-radius: 5px;
@@ -17,22 +24,11 @@ export const Box = styled.div`
   }
 `;
 
-// .profile:hover .avatar {
-//   transform: scale(1.05);
-// }
-
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
-`;
-
-export const Avatar = styled.img`
-  max-width: 300px;
-  max-height: 300px;
-  transition: transform 300ms ease 0s;
-  border-radius: 50%;
 `;
 
 export const Name = styled.p`
