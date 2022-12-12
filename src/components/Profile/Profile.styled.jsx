@@ -62,3 +62,21 @@ export const Stats = styled.ul`
   display: flex;
   justify-content: center;
 `;
+
+export const Item = styled.li`
+  display: flex;
+  flex: 1 1 33.333%;
+  padding: 10px;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Label = styled.span`
+  font-weight: 700;
+`;
+
+export const Quantity = styled.span`
+  font-weight: 700;
+  font-size: 14px;
+`;

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
 import {
   Box,
   Description,
@@ -8,6 +7,9 @@ import {
   Tag,
   Location,
   Stats,
+  Item,
+  Label,
+  Quantity,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -27,18 +29,18 @@ export const Profile = ({
       </Description>
 
       <Stats>
-        <li className={css.item}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
+        <Item>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </Item>
+        <Item>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </Item>
+        <Item>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </Item>
       </Stats>
     </Box>
   );
