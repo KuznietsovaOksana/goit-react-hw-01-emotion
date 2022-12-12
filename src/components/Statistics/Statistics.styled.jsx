@@ -1,4 +1,6 @@
-.statistics {
+import styled from '@emotion/styled';
+
+export const Box = styled.section`
   outline: 3px solid #130c98;
   border-radius: 5px;
   max-width: 500px;
@@ -6,27 +8,28 @@
   color: #130c98;
   margin: 0 auto 50px;
   transition: all 300ms ease 0s;
-}
 
-.statistics:hover {
-  background: #9ccfe0;
-  color: #3b3b3b;
-}
+  &:hover,
+  &:focus {
+    background: #9ccfe0;
+    color: #3b3b3b;
+  }
+`;
 
-.title {
+export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
   font-size: 24px;
   padding: 20px;
-}
+`;
 
-.statList {
+export const StatList = styled.ul`
   display: flex;
   justify-content: center;
-}
+`;
 
-.item {
+export const Item = styled.li`
   background-color: #868585;
   color: #ffffff;
   display: flex;
@@ -36,12 +39,12 @@
   gap: 5px;
   flex-direction: column;
   align-items: center;
-}
+`;
 
-.label {
+export const Label = styled.span`
   font-weight: 700;
-}
+`;
 
-.percentage {
+export const Percentage = styled.span`
   font-weight: 700;
-}
+`;
