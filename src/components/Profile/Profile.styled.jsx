@@ -7,6 +7,19 @@ export const Avatar = styled.img`
   border-radius: 50%;
 `;
 
+export const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+`;
+
+export const Name = styled.p`
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+`;
+
 export const Box = styled.div`
   border: 3px solid #130c98;
   border-radius: 5px;
@@ -21,20 +34,10 @@ export const Box = styled.div`
   &:focus {
     background-color: #9ccfe0;
     color: #3b3b3b;
+    {Decription} img {
+      transform: scale(1.05);
+    }
   }
-`;
-
-export const Description = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-`;
-
-export const Name = styled.p`
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 24px;
 `;
 
 export const Tag = styled.p`
